@@ -153,11 +153,11 @@ Redis and email listeners run as background processes.
 
 | Service                            | GitHub Repository Link                                                     |
 | ---------------------------------- | -------------------------------------------------------------------------- |
-| `smart-queue-user-service`         | [GitHub](https://github.com/YourUsername/smart-queue-user-service)         |
-| `smart-queue-appointment-service`  | [GitHub](https://github.com/YourUsername/smart-queue-appointment-service)  |
-| `smart-queue-queue-service`        | [GitHub](https://github.com/YourUsername/smart-queue-queue-service)        |
-| `smart-queue-notification-service` | [GitHub](https://github.com/YourUsername/smart-queue-notification-service) |
-| `smart-queue-frontend`             | [GitHub](https://github.com/YourUsername/smart-queue-frontend)             |
+| `smart-queue-user-service`         | [GitHub](https://github.com/MustafaHaider1997/smart-queue-user-service)         |
+| `smart-queue-appointment-service`  | [GitHub](https://github.com/MustafaHaider1997/smart-queue-appointment-service)  |
+| `smart-queue-queue-service`        | [GitHub](https://github.com/MustafaHaider1997/smart-queue-queue-service)        |
+| `smart-queue-notification-service` | [GitHub](https://github.com/MustafaHaider1997/smart-queue-notification-service) |
+| `smart-queue-frontend`             | [GitHub](https://github.com/MustafaHaider1997/smart-queue-frontend)             |
 
 ---
 
