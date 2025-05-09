@@ -1,0 +1,15 @@
+[submodule "smart-queue-user-service"]
+	path = smart-queue-user-service
+	url = https://github.com/MustafaHaider1997/smart-queue-user-service.git
+[submodule "smart-queue-appointment-service"]
+	path = smart-queue-appointment-service
+	url = https://github.com/MustafaHaider1997/smart-queue-appointment-service.git
+[submodule "smart-queue-queue-service"]
+	path = smart-queue-queue-service
+	url = https://github.com/MustafaHaider1997/smart-queue-queue-service.git
+[submodule "smart-queue-notification-service"]
+	path = smart-queue-notification-service
+	url = https://github.com/MustafaHaider1997/smart-queue-notification-service.git
+[submodule "smart-queue-frontend"]
+	path = smart-queue-frontend
+	url = https://github.com/MustafaHaider1997/smart-queue-frontend.git

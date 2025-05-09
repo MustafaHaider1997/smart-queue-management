@@ -1,0 +1,44 @@
+version: '3.9'
+
+services:
+
+  user-service:
+    build: ./smart-queue-user-service
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./smart-queue-user-service/.env
+
+  appointment-service:
+    build: ./smart-queue-appointment-service
+    ports:
+      - "5243:5243"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - user-service
+
+  notification-service:
+    build: ./smart-queue-notification-service
+    command: python redis_listener.py
+    env_file:
+      - ./smart-queue-notification-service/.env
+    depends_on:
+      - queue-service
+      - appointment-service
+
+  queue-service:
+    build: ./smart-queue-queue-service
+    command: python queue_subscriber.py
+    env_file:
+      - ./smart-queue-queue-service/.env
+    depends_on:
+      - appointment-service
+
+  frontend:
+    build: ./smart-queue-frontend
+    ports:
+      - "3001:3001"
+    depends_on:
+      - user-service
+      - appointment-service
